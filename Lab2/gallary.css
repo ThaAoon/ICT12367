@@ -1,0 +1,18 @@
+.image{
+    width: 300px;
+    height: 300px;
+    filter: grayscale(10);
+}
+.image:hover{
+    width: 320px;
+    height: 320px;
+    transform: scale(1.1);
+    opacity: 1;
+    filter: grayscale(0);
+}
+.image:active{
+    width: 300px;
+    height: 300px;
+    transform: scale(1);
+    opacity: 1;
+}
