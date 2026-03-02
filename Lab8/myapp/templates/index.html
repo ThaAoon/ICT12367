@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% block title %}
+    <title>Home</title>
+    <style>
+        .feature-img { width: 100%; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .section-padding { padding: 60px 0; }
+        .map-container, .video-container { margin-bottom: 30px; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        /* info section adjustments */
+        #info-section {
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        #info-section .row {
+            justify-content: center;
+        }
+        #info-section .feature-img {
+            max-width: 80%;
+            margin: 0 auto;
+        }
+        #info-section h3 {
+            font-size: 1.25rem;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div class="container-fluid" style="height: 100vh;">
+        <div class="container" style="max-width: 700px;">
+            <p class="mt-4" style="font-size: 1.2em; text-align: center;">
+                ยินดีต้อนรับสู่เว็บไซต์ของผม ที่นี่คุณจะได้พบกับข้อมูลเกี่ยวกับการเรียนรู้การพัฒนาเว็บแอปพลิเคชั่นด้วย Django และ Bootstrap รวมถึงประสบการณ์และเป้าหมายของผมในการเป็นนักพัฒนาซอฟต์แวร์
+            </p>
+        </div>
+    <div id="info-section" class="container section-padding">
+        <!-- Information section -->
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97" alt="Coding 1" class="feature-img">
+            </div>
+            <div class="col-md-6 mt-3 mt-md-0">
+                <h3>จุดเริ่มต้นของฉัน</h3>
+                <p>ที่นี่คือที่ที่ฉันเริ่มหัดเขียน Hello World ตัวแรก การเดินทางในโลกของภาษาคอมพิวเตอร์นั้นน่าตื่นเต้นเสมอ</p>
+            </div>
+        </div>
+
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6 order-md-2">
+                <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159" alt="Coding 2" class="feature-img">
+            </div>
+            <div class="col-md-6 order-md-1 mt-3 mt-md-0">
+                <h3>การเรียนรู้ Framework</h3>
+                <p>หลังจากเข้าใจพื้นฐาน ฉันก็เริ่มหันมาจับ Django และ Bootstrap เพื่อสร้างโปรเจกต์ที่ใช้งานได้จริง</p>
+            </div>
+        </div>
+
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="Coding 3" class="feature-img">
+            </div>
+            <div class="col-md-6 mt-3 mt-md-0">
+                <h3>เป้าหมายในอนาคต</h3>
+                <p>ฉันมุ่งมั่นที่จะเป็น Full Stack Developer ที่สามารถแก้ไขปัญหาและสร้างสรรค์นวัตกรรมใหม่ๆ ให้กับโลกใบนี้</p>
+            </div>
+        </div>
+
+        <hr class="my-5">
+        <!-- Map and Youtube -->
+        <div class="row">
+            <div class="col-md-6">
+                <h4 class="mb-3 text-center">My Learning Studio (Map)</h4>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30972.020506528002!2d100.59233563849956!3d13.988188491723262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d7e508977b689%3A0xa019239a67228d0!2sRangsit%2C%20Prachathipat%2C%20Thanyaburi%20District%2C%20Pathum%20Thani!5e0!3m2!1sen!2sth!4v1772468572827!5m2!1sen!2sth" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h4 class="mb-3 text-center">Recommended Tutorial (YouTube)</h4>
+                <div class="video-container">
+                    <div class="ratio ratio-16x9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/q-_ezD9Swz4?si=9IhWMFQ2g7faCseH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+{% endblock %}
